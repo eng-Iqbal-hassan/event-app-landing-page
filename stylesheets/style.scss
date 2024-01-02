@@ -20,7 +20,7 @@ header {
   position: relative;
   max-width: 26.875rem;
   margin: 0 auto;
-  nav {
+  .top-nav {
     display: flex;
     justify-content: space-between;
     padding: 0.75rem 1.25rem;
@@ -146,7 +146,7 @@ main {
       outline: none;
     }
   }
-  .service-images-wrapper {
+  .service-image-wrapper {
     img {
       max-width: calc(100vw - 1.375rem) !important;
     }
@@ -321,9 +321,7 @@ main {
     }
   }
 }
-.btn-wrapper {
-  width: 26.875rem;
-  margin: 0 auto;
+.scroll-button-wrapper {
   .scroll-up-button {
     display: flex;
     justify-content: center;
