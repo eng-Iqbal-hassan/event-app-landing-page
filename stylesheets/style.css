@@ -39,7 +39,7 @@ header {
   max-width: 26.875rem;
   margin: 0 auto;
 }
-header nav {
+header nav .top-nav {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 1.25rem;
@@ -47,22 +47,22 @@ header nav {
   max-width: 26.875rem;
   margin: 0 auto;
 }
-header nav img {
+header nav .top-nav img {
   width: 2.875rem;
   height: 2.0625rem;
 }
-header nav button {
+header nav .top-nav button {
   width: 1.5rem;
   height: 1.5rem;
   background-color: transparent;
   border: none;
   border-radius: 7px;
 }
-header nav button img {
+header nav .top-nav button img {
   width: 100%;
   height: 100%;
 }
-header .side-bar {
+header nav .side-bar {
   position: absolute;
   top: 0;
   left: -120%;
@@ -72,27 +72,27 @@ header .side-bar {
   max-width: 20.4375rem;
   height: 100vh;
 }
-header .side-bar.active {
+header nav .side-bar.active {
   left: 0 !important;
 }
-header .side-bar .header-wrapper {
+header nav .side-bar .header-wrapper {
   padding: 1.5rem 1.5rem 1.875rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1803921569);
 }
-header .side-bar .header-wrapper .header {
+header nav .side-bar .header-wrapper .header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.875rem;
 }
-header .side-bar .header-wrapper .header img {
+header nav .side-bar .header-wrapper .header img {
   width: 6rem;
   height: 4.3125rem;
 }
-header .side-bar .header-wrapper .header .cross-icon {
+header nav .side-bar .header-wrapper .header .cross-icon {
   width: 1.125rem;
   height: 1.125rem;
 }
-header .side-bar .header-wrapper button {
+header nav .side-bar .header-wrapper button {
   width: 9.875rem;
   height: 2.25rem;
   background-color: #024e99;
@@ -104,12 +104,12 @@ header .side-bar .header-wrapper button {
   border: none;
   margin: 0 auto;
 }
-header .side-bar ul li {
+header nav .side-bar ul li {
   padding: 1.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1803921569);
   list-style: none;
 }
-header .side-bar ul li a {
+header nav .side-bar ul li a {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.0588rem;
@@ -169,7 +169,7 @@ main {
   border: none;
   outline: none;
 }
-.service .service-images-wrapper img {
+.service .service-image-wrapper img {
   max-width: calc(100vw - 1.375rem) !important;
 }
 
@@ -345,11 +345,7 @@ main {
   color: #747688;
 }
 
-.btn-wrapper {
-  width: 26.875rem;
-  margin: 0 auto;
-}
-.btn-wrapper .scroll-up-button {
+.scroll-button-wrapper .scroll-up-button {
   display: flex;
   justify-content: center;
   align-items: center;
