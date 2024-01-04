@@ -3,17 +3,35 @@ h2 {
   font-weight: 700;
   line-height: 2.4206rem;
 }
+@media screen and (min-width: 37.5rem) {
+  h2 {
+    font-size: 2.125rem;
+    line-height: 2.5719rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  h2 {
+    font-size: 3.125rem;
+    line-height: 3.7819rem;
+  }
+}
 
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.8156rem;
 }
+@media screen and (min-width: 37.5rem) {
+  h3 {
+    font-size: 1rem;
+    line-height: 1.21rem;
+  }
+}
 
 h4 {
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 1.5437rem;
+  line-height: 1.5125rem;
 }
 
 * {
@@ -36,16 +54,13 @@ body {
 
 header {
   position: relative;
-  max-width: 26.875rem;
-  margin: 0 auto;
 }
 header nav .top-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.75rem 1.25rem;
   background-color: #282828;
-  max-width: 26.875rem;
-  margin: 0 auto;
 }
 header nav .top-nav img {
   width: 2.875rem;
@@ -118,7 +133,7 @@ header nav .side-bar ul li a {
 }
 
 main {
-  max-width: 26.875rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -131,20 +146,43 @@ main {
   padding: 2.5rem 1.25rem 2rem;
   background-color: #eeeeee;
 }
+@media screen and (min-width: 37.5rem) {
+  .service {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2.125rem 1.875rem 2.625rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .service {
+    gap: 1.5rem;
+    padding: 6.6875rem 8.4375rem 5.25rem;
+  }
+}
 .service .service-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.service .service-content > span {
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 0.9075rem;
-  color: rgba(0, 0, 0, 0.8392156863);
+@media screen and (min-width: 37.5rem) {
+  .service .service-content {
+    align-items: flex-start;
+  }
 }
 .service .service-content h2 {
   text-align: center;
-  margin: 1rem 0 0.75rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .service .service-content h2 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .service .service-content h2 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 4.5381rem;
+  }
 }
 .service .service-content h2 span {
   color: #024e99;
@@ -155,7 +193,23 @@ main {
   line-height: 1.5rem;
   color: #747688;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 0.75rem 0 1.5rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .service .service-content p {
+    line-height: 1.065rem;
+    text-align: left;
+    margin: 0.875rem 0 1.25rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .service .service-content p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    letter-spacing: 5%;
+    margin: 26px 0;
+  }
 }
 .service .service-content button {
   width: 11.25rem;
@@ -169,31 +223,101 @@ main {
   border: none;
   outline: none;
 }
+@media screen and (min-width: 600px) {
+  .service .service-content button {
+    width: 8.0625rem;
+    height: 2.25rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .service .service-content button {
+    width: 12.75rem;
+    height: 3.125rem;
+    font-size: 1rem;
+    line-height: 1.21rem;
+  }
+}
 .service .service-image-wrapper img {
   max-width: calc(100vw - 1.375rem) !important;
 }
+@media screen and (min-width: 37.5rem) {
+  .service .service-image-wrapper img {
+    width: 19.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .service .service-image-wrapper img {
+    width: 31.5625rem;
+    height: 33.625rem;
+  }
+}
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
   padding: 2.5rem 1.25rem;
   background-color: #ffffff;
 }
-.about-us .about-us-content h2 {
-  color: rgba(0, 0, 0, 0.8392156863);
+@media screen and (min-width: 37.5rem) {
+  .about-us {
+    padding: 4.375rem 1.875rem;
+  }
 }
-.about-us .about-us-content > p {
+@media screen and (min-width: 80rem) {
+  .about-us {
+    padding: 7.5rem;
+  }
+}
+.about-us h2 {
+  color: #024e99;
+}
+.about-us > p {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.2rem;
   color: #747688;
   margin: 0.8125rem 0 1rem;
 }
+@media screen and (min-width: 37.5rem) {
+  .about-us > p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin: 0.9375rem 0;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .about-us > p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
+}
+.about-us .about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .about-us .about-us-content {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
 .about-us .about-us-content ul {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .about-us .about-us-content ul {
+    padding: 16px 0;
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .about-us .about-us-content ul {
+    gap: 0.5rem;
+  }
 }
 .about-us .about-us-content ul li {
   display: flex;
@@ -204,18 +328,52 @@ main {
   height: 1.375rem;
 }
 .about-us .about-us-content ul li p {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
   color: #747688;
 }
+@media screen and (min-width: 37.5rem) {
+  .about-us .about-us-content ul li p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .about-us .about-us-content ul li p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
+}
 .about-us .about-us-content ul li p span {
+  font-size: 0.875rem;
   font-weight: 700;
+  line-height: 1.2rem;
   color: rgba(0, 0, 0, 0.8392156863);
+}
+@media screen and (min-width: 80rem) {
+  .about-us .about-us-content ul li p span {
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+  }
 }
 .about-us .image-wrapper {
   width: 100%;
   height: 16.125rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .about-us .image-wrapper {
+    flex: 0 0 18.625rem;
+    height: 16.75rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .about-us .image-wrapper {
+    flex: 0 0 34.4375rem;
+    height: 26.625rem;
+  }
 }
 .about-us .image-wrapper img {
   width: 100%;
@@ -225,9 +383,14 @@ main {
 
 .feature {
   position: relative;
-  padding: 1.5rem 0 2.5rem;
+  padding: 2.5rem 0;
   background-color: #ffffff;
   z-index: -2;
+}
+@media screen and (min-width: 37.5rem) {
+  .feature {
+    padding: 2.5625rem 0 4.5625rem;
+  }
 }
 .feature .overlay {
   position: absolute;
@@ -237,12 +400,22 @@ main {
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.8392156863);
 }
+@media screen and (min-width: 37.5rem) {
+  .feature .overlay {
+    height: 19.375rem;
+  }
+}
 .feature .feature-content {
   padding: 0 1.25rem;
 }
 .feature .feature-content h2 {
   color: #ffffff;
-  margin: 1rem 0 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .feature .feature-content h2 {
+    margin-bottom: 2.625rem;
+  }
 }
 .feature .feature-content h2 span:first-child {
   display: block;
@@ -250,6 +423,12 @@ main {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8156rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .feature .feature-content h2 span:first-child {
+    font-size: 1.75rem;
+    line-height: 2.1181rem;
+  }
 }
 .feature .feature-content h2 span:last-child {
   color: #024e99;
@@ -261,6 +440,11 @@ main {
   gap: 2rem;
   padding: 0 1.25rem;
 }
+@media screen and (min-width: 37.5rem) {
+  .feature .event-listing {
+    flex-direction: row;
+  }
+}
 .feature .event-listing li {
   background-color: #ffffff;
   box-shadow: 18px 23px 33px 0 rgba(0, 0, 0, 0.0392156863);
@@ -270,6 +454,11 @@ main {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 37.5rem) {
+  .feature .event-listing li {
+    padding: 0 1rem;
+  }
+}
 .feature .event-listing li .event-listing-data {
   display: flex;
   flex-direction: column;
@@ -277,7 +466,14 @@ main {
   gap: 0.75rem;
   padding: 2rem 0;
 }
+@media screen and (min-width: 37.5rem) {
+  .feature .event-listing li .event-listing-data {
+    gap: 0.5rem;
+    padding: 2.25rem 0;
+  }
+}
 .feature .event-listing li .event-listing-data h3 {
+  white-space: nowrap;
   color: #000000;
 }
 .feature .event-listing li .event-listing-data p {
@@ -286,6 +482,13 @@ main {
   line-height: 1.5rem;
   color: #747688;
   text-align: center;
+}
+@media screen and (min-width: 37.5rem) {
+  .feature .event-listing li .event-listing-data p {
+    font-size: 0.5625rem;
+    font-weight: 500;
+    line-height: 1.0862rem;
+  }
 }
 .feature .event-listing li .event-listing-image {
   max-height: 25.4375rem;
@@ -302,10 +505,20 @@ main {
   align-items: center;
   background-color: #ffffff;
 }
+@media screen and (min-width: 600px) {
+  .working-method-wrapper {
+    padding: 0 1.875rem 4.375rem;
+  }
+}
 .working-method-wrapper h2 {
   color: #024e99;
   text-align: center;
   margin-bottom: 3.25rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .working-method-wrapper h2 {
+    margin-bottom: 2.875rem;
+  }
 }
 .working-method-wrapper h2 span {
   display: block;
@@ -314,35 +527,78 @@ main {
   line-height: 1.8156rem;
   color: rgba(0, 0, 0, 0.8392156863);
 }
+@media screen and (min-width: 48rem) {
+  .working-method-wrapper h2 span {
+    font-size: 1.75rem;
+    line-height: 2.1119rem;
+  }
+}
 .working-method-wrapper .working-method {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3.75rem;
 }
+@media screen and (min-width: 37.5rem) {
+  .working-method-wrapper .working-method .image-wrapper {
+    width: 32.875rem;
+    height: 31.3125rem;
+  }
+}
 .working-method-wrapper .working-method .image-wrapper img {
   width: 100%;
   height: 100%;
 }
 .working-method-wrapper .working-method .working-method-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 100%;
   gap: 2rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .working-method-wrapper .working-method .working-method-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 19px;
+  }
 }
 .working-method-wrapper .working-method .working-method-content li {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
 }
-.working-method-wrapper .working-method .working-method-content .listing-data h4 {
+@media screen and (min-width: 37.5rem) {
+  .working-method-wrapper .working-method .working-method-content li {
+    gap: 1.5rem;
+  }
+}
+.working-method-wrapper .working-method .working-method-content li .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 3.125rem;
+  width: 50px;
+  height: 3.125rem;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.working-method-wrapper .working-method .working-method-content li .listing-data h4 {
   color: rgba(0, 0, 0, 0.8392156863);
   margin-bottom: 0.75rem;
 }
-.working-method-wrapper .working-method .working-method-content .listing-data p {
+.working-method-wrapper .working-method .working-method-content li .listing-data p {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5rem;
   color: #747688;
+}
+@media screen and (min-width: 37.5rem) {
+  .working-method-wrapper .working-method .working-method-content li .listing-data p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+}
+.working-method-wrapper .working-method .working-method-content li:first-child .image-wrapper {
+  background-color: #024e99;
 }
 
 .scroll-button-wrapper .scroll-up-button {
@@ -362,8 +618,6 @@ main {
 footer {
   padding: 2rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.8392156863);
-  max-width: 26.875rem;
-  margin: 0 auto;
 }
 footer .address {
   display: flex;
