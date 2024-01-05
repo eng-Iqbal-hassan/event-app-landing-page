@@ -19,9 +19,17 @@ h3 {
     font-size: 1rem;
     line-height: 1.21rem;
   }
+  @media screen and (min-width: 80rem) {
+    font-size: 1.75rem;
+    line-height: 2.205rem;
+  }
 }
 h4 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5125rem;
+  @media screen and (min-width: 80rem) {
+    font-size: 1.5rem;
+    line-height: 1.8156rem;
+  }
 }

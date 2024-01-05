@@ -27,11 +27,23 @@ h3 {
     line-height: 1.21rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2.205rem;
+  }
+}
 
 h4 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5125rem;
+}
+@media screen and (min-width: 80rem) {
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.8156rem;
+  }
 }
 
 * {
@@ -62,20 +74,68 @@ header nav .top-nav {
   padding: 0.75rem 1.25rem;
   background-color: #282828;
 }
+@media screen and (min-width: 37.5rem) {
+  header nav .top-nav {
+    padding: 1.1875rem 1.875rem;
+  }
+}
 header nav .top-nav img {
   width: 2.875rem;
   height: 2.0625rem;
 }
-header nav .top-nav button {
+header nav .top-nav .navigation-listing {
+  display: none;
+}
+@media screen and (min-width: 37.5rem) {
+  header nav .top-nav .navigation-listing {
+    display: flex;
+    gap: 2rem;
+  }
+}
+header nav .top-nav .navigation-listing li {
+  list-style: none;
+}
+header nav .top-nav .navigation-listing li a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.0588rem;
+  color: #fff;
+  gap: 2rem;
+}
+header nav .top-nav .responsive-menu-button {
   width: 1.5rem;
   height: 1.5rem;
   background-color: transparent;
   border: none;
   border-radius: 7px;
+  padding: 0;
 }
-header nav .top-nav button img {
+@media screen and (min-width: 37.5rem) {
+  header nav .top-nav .responsive-menu-button {
+    display: none;
+  }
+}
+header nav .top-nav .responsive-menu-button img {
   width: 100%;
   height: 100%;
+}
+header nav .top-nav .login-button {
+  display: none;
+}
+@media screen and (min-width: 37.5rem) {
+  header nav .top-nav .login-button {
+    display: block;
+    width: 8.0625rem;
+    height: 2.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #024e99;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+  }
 }
 header nav .side-bar {
   position: absolute;
@@ -86,6 +146,11 @@ header nav .side-bar {
   width: -webkit-fill-available;
   max-width: 20.4375rem;
   height: 100vh;
+}
+@media screen and (min-width: 37.5rem) {
+  header nav .side-bar {
+    display: none;
+  }
 }
 header nav .side-bar.active {
   left: 0 !important;
@@ -392,6 +457,11 @@ main {
     padding: 2.5625rem 0 4.5625rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .feature {
+    padding: 3.75rem 0 7.5rem;
+  }
+}
 .feature .overlay {
   position: absolute;
   width: 100%;
@@ -405,8 +475,23 @@ main {
     height: 19.375rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .feature .overlay {
+    height: 36.3125rem;
+  }
+}
 .feature .feature-content {
   padding: 0 1.25rem;
+}
+@media screen and (min-width: 80rem) {
+  .feature .feature-content {
+    padding: 0 1.875rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .feature .feature-content {
+    padding: 0 7.5rem;
+  }
 }
 .feature .feature-content h2 {
   color: #ffffff;
@@ -415,6 +500,11 @@ main {
 @media screen and (min-width: 37.5rem) {
   .feature .feature-content h2 {
     margin-bottom: 2.625rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .feature .feature-content h2 {
+    margin-bottom: 3.625rem;
   }
 }
 .feature .feature-content h2 span:first-child {
@@ -430,6 +520,12 @@ main {
     line-height: 2.1181rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .feature .feature-content h2 span:first-child {
+    font-size: 2.625rem;
+    line-height: 3.1769rem;
+  }
+}
 .feature .feature-content h2 span:last-child {
   color: #024e99;
 }
@@ -443,6 +539,12 @@ main {
 @media screen and (min-width: 37.5rem) {
   .feature .event-listing {
     flex-direction: row;
+    padding: 0 1.875rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .feature .event-listing {
+    padding: 0 7.5rem;
   }
 }
 .feature .event-listing li {
@@ -459,6 +561,11 @@ main {
     padding: 0 1rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .feature .event-listing li {
+    padding: 0 1.75rem;
+  }
+}
 .feature .event-listing li .event-listing-data {
   display: flex;
   flex-direction: column;
@@ -470,6 +577,12 @@ main {
   .feature .event-listing li .event-listing-data {
     gap: 0.5rem;
     padding: 2.25rem 0;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .feature .event-listing li .event-listing-data {
+    gap: 0.75rem;
+    padding: 3.875rem 0 2.75rem;
   }
 }
 .feature .event-listing li .event-listing-data h3 {
@@ -488,6 +601,13 @@ main {
     font-size: 0.5625rem;
     font-weight: 500;
     line-height: 1.0862rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .feature .event-listing li .event-listing-data p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.875rem;
   }
 }
 .feature .event-listing li .event-listing-image {
@@ -510,6 +630,11 @@ main {
     padding: 0 1.875rem 4.375rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper {
+    padding: 0 7.375rem 7.5rem;
+  }
+}
 .working-method-wrapper h2 {
   color: #024e99;
   text-align: center;
@@ -518,6 +643,11 @@ main {
 @media screen and (min-width: 37.5rem) {
   .working-method-wrapper h2 {
     margin-bottom: 2.875rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper h2 {
+    margin-bottom: 4.5rem;
   }
 }
 .working-method-wrapper h2 span {
@@ -533,16 +663,34 @@ main {
     line-height: 2.1119rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper h2 span {
+    font-size: 2.625rem;
+    line-height: 3.1769rem;
+  }
+}
 .working-method-wrapper .working-method {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3.75rem;
 }
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper .working-method {
+    flex-direction: row;
+    gap: 8.5rem;
+  }
+}
 @media screen and (min-width: 37.5rem) {
   .working-method-wrapper .working-method .image-wrapper {
     width: 32.875rem;
     height: 31.3125rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper .working-method .image-wrapper {
+    width: 31.375rem !important;
+    height: 31.25rem;
   }
 }
 .working-method-wrapper .working-method .image-wrapper img {
@@ -558,6 +706,14 @@ main {
   .working-method-wrapper .working-method .working-method-content {
     grid-template-columns: repeat(2, 1fr);
     gap: 45px 19px;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper .working-method .working-method-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.875rem;
   }
 }
 .working-method-wrapper .working-method .working-method-content li {
@@ -595,6 +751,15 @@ main {
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper .working-method .working-method-content li .listing-data p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 5%;
+    max-width: 29.125rem;
   }
 }
 .working-method-wrapper .working-method .working-method-content li:first-child .image-wrapper {
