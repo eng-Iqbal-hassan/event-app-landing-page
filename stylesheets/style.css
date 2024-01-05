@@ -79,9 +79,26 @@ header nav .top-nav {
     padding: 1.1875rem 1.875rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  header nav .top-nav {
+    padding: 1rem 7.5rem;
+  }
+}
 header nav .top-nav img {
   width: 2.875rem;
   height: 2.0625rem;
+}
+@media screen and (min-width: 37.5rem) {
+  header nav .top-nav img {
+    width: 3.625rem;
+    height: 2.625rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  header nav .top-nav img {
+    width: 6rem;
+    height: 4.3125rem;
+  }
 }
 header nav .top-nav .navigation-listing {
   display: none;
@@ -102,6 +119,14 @@ header nav .top-nav .navigation-listing li a {
   line-height: 1.0588rem;
   color: #fff;
   gap: 2rem;
+}
+@media screen and (min-width: 80rem) {
+  header nav .top-nav .navigation-listing li a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.3613rem;
+    gap: 3.125rem;
+  }
 }
 header nav .top-nav .responsive-menu-button {
   width: 1.5rem;
@@ -135,6 +160,14 @@ header nav .top-nav .login-button {
     border: none;
     border-radius: 0.5rem;
     outline: none;
+  }
+}
+@media screen and (min-width: 80rem) {
+  header nav .top-nav .login-button {
+    width: 8.5625rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.21rem;
   }
 }
 header nav .side-bar {
