@@ -595,11 +595,13 @@ main {
   .feature .event-listing {
     flex-direction: row;
     padding: 0 1.875rem;
+    gap: 2.1875rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .feature .event-listing {
     padding: 0 7.5rem;
+    gap: 3rem;
   }
 }
 .feature .event-listing li {
@@ -664,9 +666,6 @@ main {
     font-weight: 500;
     line-height: 1.875rem;
   }
-}
-.feature .event-listing li .event-listing-image {
-  max-height: 25.4375rem;
 }
 .feature .event-listing li .event-listing-image img {
   width: 100%;
