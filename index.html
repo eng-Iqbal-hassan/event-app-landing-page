@@ -15,64 +15,74 @@
   </head>
   <body id="page-body">
     <header>
-      <nav>
-        <div class="top-nav">
-          <img src="./images/pngs//header-logo.png" alt="logo" />
-          <button class="responsive-menu-button">
-            <img src="./images/svgs/hamburger.svg" alt="hamburger" />
-          </button>
-        </div>
-        <div class="side-bar">
-          <div class="header-wrapper">
-            <div class="header">
-              <img src="./images/pngs/sidebar-logo.png" alt="side-bar" />
-              <div class="cross-icon">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.9999 1.00006L1 17M0.999932 1L16.9999 16.9999"
-                    stroke="#1C274C"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <button>Login</button>
+      <div class="header-wrapper">
+        <nav>
+          <div class="top-nav">
+            <img src="./images/pngs//header-logo.png" alt="logo" />
+            <ul class="navigation-listing">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#work">How it Works</a></li>
+            </ul>
+            <button class="responsive-menu-button">
+              <img src="./images/svgs/hamburger.svg" alt="hamburger" />
+            </button>
+            <button class="login-button">Login</button>
           </div>
-          <ul>
-            <li class="side-bar-link"><a href="#home">Home</a></li>
-            <li class="side-bar-link"><a href="#about-us">About Us</a></li>
-            <li class="side-bar-link"><a href="#features">Features</a></li>
-            <li class="side-bar-link"><a href="#work">How it Works</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div class="side-bar">
+            <div class="header-wrapper">
+              <div class="header">
+                <img src="./images/pngs/sidebar-logo.png" alt="side-bar" />
+                <div class="cross-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.9999 1.00006L1 17M0.999932 1L16.9999 16.9999"
+                      stroke="#1C274C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button>Login</button>
+            </div>
+            <ul>
+              <li class="side-bar-link"><a href="#home">Home</a></li>
+              <li class="side-bar-link"><a href="#about-us">About Us</a></li>
+              <li class="side-bar-link"><a href="#features">Features</a></li>
+              <li class="side-bar-link"><a href="#work">How it Works</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main">
-      <section class="service" id="home">
-        <div class="service-content">
-          <span>The Best Event App</span>
-          <h2>Discover, Explore,& Attend <span>Nearby Events</span></h2>
-          <p>
-            Elevate your events effortlessly with our intuitive app. From
-            seamless planning to unforgettable moments, we've got every detail
-            covered. Experience the future of event management – simple,
-            seamless, and sensational.
-          </p>
-          <button>Explore</button>
-        </div>
-        <div class="service-image-wrapper">
-          <img src="./images/pngs/home.png" alt="home" />
+      <section class="service-wrapper">
+        <div class="service" id="home">
+          <div class="service-content">
+            <h2>Discover, Explore,& Attend <span>Nearby Events</span></h2>
+            <p>
+              Elevate your events effortlessly with our intuitive app. From
+              seamless planning to unforgettable moments, we've got every detail
+              covered. Experience the future of event management – simple,
+              seamless, and sensational.
+            </p>
+            <button>Explore</button>
+          </div>
+          <div class="service-image-wrapper">
+            <img src="./images/pngs/home.png" alt="home" />
+          </div>
         </div>
       </section>
       <section class="about-us" id="about-us">
-        <div class="about-us-content">
+        <div class="about-us-heading">
           <h2>About Us</h2>
           <p>
             We believe that life is a series of moments, and each moment
@@ -80,84 +90,89 @@
             and creating memorable experiences led us to develop this
             one-of-a-kind event exploration platform.
           </p>
-          <ul>
-            <li>
-              <img src="./images/svgs/tick-mark.svg" alt="tick-mark" />
-              <p>
-                <span>Personalization at its Core.</span> Personalize your event
-                experience with us. Filter by music, sports, arts, and more for
-                a curated experience that suits your interests.
-              </p>
-            </li>
-            <li>
-              <img src="./images/svgs/tick-mark.svg" alt="tick-mark" />
-              <p>
-                <span>Real-time Event Updates.</span> Stay ahead of the curve
-                with us get real-time notifications for upcoming events,
-                ensuring you never miss the hottest gatherings in your area.
-              </p>
-            </li>
-            <li>
-              <img src="./images/svgs/tick-mark.svg" alt="tick-mark" />
-              <p>
-                <span>Seamless Event Exploration.</span> Discover events
-                effortlessly with us seamless interface—whether nearby or
-                future, your event exploration made easy!
-              </p>
-            </li>
-          </ul>
         </div>
-        <div class="image-wrapper">
+        <ul class="about-us-content">
+          <li>
+            <img src="./images/svgs/tick-mark.svg" alt="tick-mark" />
+            <p>
+              <span>Personalization at its Core.</span> Personalize your event
+              experience with us. Filter by music, sports, arts, and more for a
+              curated experience that suits your interests.
+            </p>
+          </li>
+          <li>
+            <img src="./images/svgs/tick-mark.svg" alt="tick-mark" />
+            <p>
+              <span>Real-time Event Updates.</span> Stay ahead of the curve with
+              us get real-time notifications for upcoming events, ensuring you
+              never miss the hottest gatherings in your area.
+            </p>
+          </li>
+          <li>
+            <img src="./images/svgs/tick-mark.svg" alt="tick-mark" />
+            <p>
+              <span>Seamless Event Exploration.</span> Discover events
+              effortlessly with us seamless interface—whether nearby or future,
+              your event exploration made easy!
+            </p>
+          </li>
+        </ul>
+        <div class="about-us-image">
           <img src="./images/pngs/about.png" alt="about-us" />
         </div>
       </section>
-      <section class="feature" id="features">
+      <section class="feature-wrapper">
         <div class="overlay"></div>
-        <div class="feature-content">
-          <h2>
-            <span>Unlocking Event Excitement:</span>
-            Our Key
-            <span>Features</span>
-          </h2>
+        <div class="feature" id="features">
+          <div class="feature-content">
+            <h2>
+              <span>Unlocking Event Excitement:</span>
+              Our Key
+              <span>Features</span>
+            </h2>
+          </div>
+          <ul class="event-listing">
+            <li>
+              <div class="event-listing-data">
+                <h3>Explore All Event</h3>
+                <p>
+                  Elevate your events effortlessly with our intuitive app. From
+                  seamless planning to unforgettable moments, we've got
+                </p>
+              </div>
+              <div class="event-listing-image">
+                <img
+                  src="./images/pngs/event-listing.png"
+                  alt="event-listing"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="event-listing-image">
+                <img src="./images/pngs/event-detail.png" alt="event-detail" />
+              </div>
+              <div class="event-listing-data">
+                <h3>Check Event Detail</h3>
+                <p>
+                  Elevate your events effortlessly with our intuitive app. From
+                  seamless planning to unforgettable moments, we've got
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="event-listing-data">
+                <h3>Near You Event</h3>
+                <p>
+                  Elevate your events effortlessly with our intuitive app. From
+                  seamless planning to unforgettable moments, we've got
+                </p>
+              </div>
+              <div class="event-listing-image">
+                <img src="./images/pngs/event-map.png" alt="event-map" />
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="event-listing">
-          <li>
-            <div class="event-listing-data">
-              <h3>Explore All Event</h3>
-              <p>
-                Elevate your events effortlessly with our intuitive app. From
-                seamless planning to unforgettable moments, we've got
-              </p>
-            </div>
-            <div class="event-listing-image">
-              <img src="./images/pngs/event-listing.png" alt="event-listing" />
-            </div>
-          </li>
-          <li>
-            <div class="event-listing-image">
-              <img src="./images/pngs/event-detail.png" alt="event-detail" />
-            </div>
-            <div class="event-listing-data">
-              <h3>Check Event Detail</h3>
-              <p>
-                Elevate your events effortlessly with our intuitive app. From
-                seamless planning to unforgettable moments, we've got
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="event-listing-data">
-              <h3>Near You Event</h3>
-              <p>
-                Elevate your events effortlessly with our intuitive app. From
-                seamless planning to unforgettable moments, we've got
-              </p>
-            </div>
-            <div class="event-listing-image">
-              <img src="./images/pngs/event-map.png" alt="event-map" />
-            </div>
-          </li>
-        </ul>
       </section>
       <section class="working-method-wrapper" id="work">
         <h2>How It Works:<span> A Step-by-Step Guide</span></h2>
@@ -167,7 +182,36 @@
           </div>
           <ul class="working-method-content">
             <li>
-              <img src="./images/svgs/login.svg" alt="login" />
+              <div class="image-wrapper">
+                <svg
+                  width="24"
+                  height="23"
+                  viewBox="0 0 24 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1802_447)">
+                    <path
+                      d="M0.888672 21.2605C0.961114 20.7815 1.01037 20.2989 1.10947 19.8271C1.79912 16.5338 3.56148 14.0327 6.30905 12.2729C6.73675 12.5652 7.13431 12.8639 7.55563 13.1208C10.6214 14.9938 14.6259 14.7118 17.4303 12.4274C17.592 12.2957 17.7004 12.2843 17.8754 12.4011C20.7603 14.3275 22.4692 17.042 23.0019 20.5444C23.0558 20.8971 23.0738 21.2557 23.1109 21.6402C22.6032 21.7551 22.1129 21.8719 21.6203 21.9761C17.7131 22.803 13.7642 23.0868 9.78394 22.9102C6.86564 22.7867 3.96506 22.3799 1.12049 21.6952C1.04385 21.6797 0.966469 21.6683 0.888672 21.6611L0.888672 21.2605Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.0037 6.01273C17.0082 6.69662 16.8815 7.37466 16.6308 8.00763C16.3801 8.64061 16.0105 9.21595 15.5433 9.70039C15.076 10.1848 14.5205 10.5688 13.9087 10.83C13.297 11.0912 12.6412 11.2245 11.9792 11.2222C11.3173 11.2199 10.6624 11.0821 10.0523 10.8166C9.44229 10.5512 8.88924 10.1634 8.42516 9.67571C7.96109 9.18804 7.59519 8.61014 7.34863 7.97545C7.10208 7.34075 6.97976 6.66185 6.98874 5.978C6.99396 3.13024 9.25182 0.813585 12.0127 0.823764C13.34 0.829786 14.6109 1.37944 15.5465 2.35219C16.4821 3.32493 17.0061 4.64135 17.0037 6.01273Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1802_447">
+                      <rect
+                        width="22.2222"
+                        height="22.1372"
+                        fill="white"
+                        transform="translate(0.888672 0.82373)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
               <div class="listing-data">
                 <h4>Login</h4>
                 <p>
@@ -177,7 +221,53 @@
               </div>
             </li>
             <li>
-              <img src="./images/svgs/verification.svg" alt="verification" />
+              <div class="image-wrapper">
+                <svg
+                  width="26"
+                  height="11"
+                  viewBox="0 0 26 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1802_456)">
+                    <path
+                      d="M25.5 8.92382C25.3942 9.39646 25.2194 9.83439 24.8556 10.1755C24.4178 10.5866 23.8902 10.759 23.2983 10.7596C16.4318 10.7596 9.56458 10.7596 2.6968 10.7596C1.37799 10.7596 0.503057 9.86362 0.501834 8.54863C0.500611 6.5529 0.5 4.55778 0.5 2.56327C0.503668 1.49678 1.08634 0.717777 2.09456 0.447958C2.30766 0.396622 2.52652 0.372875 2.74571 0.377305C9.58007 0.372839 16.4146 0.370605 23.2494 0.370605C24.4569 0.370605 25.3233 1.12768 25.4762 2.16859C25.4817 2.18363 25.4898 2.19764 25.5 2.21001V8.92382ZM12.9765 9.71562C16.4101 9.71562 19.844 9.71562 23.2781 9.71562C24.0241 9.71562 24.4569 9.31546 24.4594 8.59736C24.4667 6.57848 24.4667 4.55961 24.4594 2.54073C24.4594 1.83786 24.0314 1.42248 23.3277 1.42248C16.4432 1.42248 9.55867 1.42248 2.67418 1.42248C1.96739 1.42065 1.54429 1.83543 1.5394 2.5383C1.53267 4.55738 1.53634 6.57645 1.5394 8.59492C1.5394 8.87753 1.60727 9.14004 1.80108 9.35931C2.0536 9.64557 2.37948 9.71744 2.74571 9.71684C6.15657 9.71318 9.56682 9.71237 12.9765 9.7144V9.71562Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                    <path
+                      d="M5.71293 4.66167C5.91898 4.54473 6.07978 4.44789 6.24119 4.36323C6.54017 4.20852 6.84343 4.28039 6.98711 4.53316C7.1308 4.78593 7.04398 5.08133 6.75967 5.26405C6.60254 5.36333 6.43868 5.45164 6.24792 5.56189C6.47047 5.7038 6.68141 5.8183 6.86972 5.96265C6.96496 6.0401 7.02874 6.14936 7.04921 6.27012C7.06967 6.39088 7.04544 6.51493 6.981 6.61924C6.91764 6.72002 6.82116 6.7958 6.708 6.83367C6.59485 6.87154 6.47201 6.86916 6.36042 6.82693C6.27079 6.78873 6.18414 6.74394 6.10118 6.69293C5.98257 6.62837 5.86456 6.56198 5.73433 6.48829C5.71721 6.75689 5.71782 6.99869 5.68236 7.23562C5.6643 7.34899 5.60584 7.45208 5.51769 7.52601C5.42955 7.59995 5.31762 7.63978 5.2024 7.63822C5.08341 7.64206 4.96699 7.60322 4.87431 7.52878C4.78162 7.45434 4.71884 7.34923 4.69738 7.23257C4.67922 7.12938 4.66961 7.02488 4.66864 6.92012C4.66375 6.78551 4.66864 6.65091 4.66864 6.47489C4.47116 6.58696 4.3128 6.68014 4.15078 6.76785C3.85424 6.92743 3.54609 6.86469 3.40057 6.61802C3.24405 6.35307 3.3321 6.05645 3.62863 5.87008C3.78454 5.77202 3.94718 5.6837 4.14344 5.57041C3.95513 5.46017 3.79555 5.37064 3.64025 5.2744C3.33821 5.08742 3.24405 4.79567 3.39568 4.53194C3.54731 4.26821 3.84629 4.20792 4.15934 4.37602C4.31525 4.45946 4.46504 4.54961 4.64357 4.64949C4.66192 4.37846 4.66253 4.13056 4.69982 3.88876C4.72165 3.77643 4.7828 3.67547 4.87238 3.60386C4.96195 3.53225 5.07414 3.49464 5.18895 3.49774C5.30351 3.49713 5.41476 3.53595 5.50389 3.60765C5.59302 3.67935 5.65455 3.77951 5.67808 3.8912C5.6985 4.00233 5.70914 4.11503 5.70988 4.22801C5.71721 4.35714 5.71293 4.48626 5.71293 4.66167Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                    <path
+                      d="M20.288 6.47187C20.0935 6.58272 19.9358 6.67591 19.7744 6.76362C19.4766 6.92502 19.1697 6.86473 19.0223 6.62049C18.864 6.35737 18.9508 6.05588 19.2443 5.87011C19.4008 5.77144 19.5647 5.68373 19.764 5.56557C19.5775 5.45655 19.4191 5.36762 19.2638 5.272C18.9581 5.08501 18.8634 4.79692 19.0132 4.53137C19.163 4.26581 19.4668 4.2049 19.7799 4.37179C19.9364 4.45523 20.0856 4.54598 20.269 4.64831C20.2867 4.37849 20.2867 4.13121 20.324 3.89001C20.3446 3.77679 20.4053 3.67468 20.4951 3.60225C20.5848 3.52982 20.6977 3.49189 20.8132 3.49533C20.9277 3.49422 21.0391 3.53224 21.1289 3.60306C21.2187 3.67389 21.2814 3.77323 21.3066 3.88453C21.3266 3.98753 21.3374 4.09209 21.339 4.19699C21.3439 4.33464 21.339 4.47168 21.339 4.65927C21.5224 4.55634 21.6698 4.46985 21.8214 4.38702C22.1509 4.20429 22.4572 4.26155 22.6113 4.5271C22.7654 4.79266 22.6676 5.08745 22.3466 5.28114C22.2011 5.36945 22.0531 5.45289 21.874 5.55766C22.0947 5.69774 22.302 5.81225 22.4921 5.95538C22.5883 6.03219 22.6531 6.14134 22.6742 6.26234C22.6954 6.38334 22.6715 6.50787 22.607 6.61257C22.5448 6.71413 22.449 6.79102 22.3362 6.83012C22.2234 6.86922 22.1004 6.8681 21.9883 6.82696C21.906 6.79247 21.8265 6.75174 21.7505 6.70515C21.6245 6.63632 21.4992 6.56567 21.3549 6.48527C21.3384 6.75266 21.3396 6.99385 21.3041 7.22956C21.286 7.34707 21.2247 7.45371 21.1322 7.52885C21.0398 7.604 20.9226 7.64233 20.8034 7.63642C20.6885 7.63609 20.5773 7.59582 20.489 7.52254C20.4007 7.44926 20.3408 7.34758 20.3198 7.23504C20.3003 7.12379 20.2901 7.01114 20.2892 6.89822C20.2843 6.77093 20.288 6.64424 20.288 6.47187Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                    <path
+                      d="M11.4516 5.5728C11.6527 5.68853 11.8184 5.77623 11.9743 5.87734C12.2672 6.06493 12.3467 6.3646 12.1816 6.62711C12.0343 6.86282 11.7347 6.92494 11.4479 6.77268C11.284 6.68497 11.1245 6.58995 10.9068 6.46388C10.9068 6.71664 10.9178 6.92921 10.9068 7.14056C10.8885 7.43352 10.6824 7.62781 10.4073 7.63695C10.1321 7.64609 9.92121 7.44814 9.88392 7.16126C9.87596 7.07257 9.87351 6.98348 9.87658 6.89449C9.87658 6.76719 9.87658 6.6399 9.87658 6.46814C9.68582 6.57594 9.52746 6.66852 9.36666 6.75684C9.05668 6.92555 8.74669 6.86282 8.60118 6.60457C8.45016 6.33658 8.54003 6.04849 8.84146 5.8615C8.99248 5.7671 9.14717 5.67878 9.34098 5.57097C9.12882 5.44002 8.93317 5.33465 8.75525 5.20553C8.6479 5.13519 8.57159 5.02664 8.54193 4.9021C8.51227 4.77756 8.53149 4.64644 8.59567 4.53555C8.72713 4.29923 9.00043 4.21152 9.26823 4.32542C9.36436 4.37218 9.45803 4.42382 9.54886 4.48012L9.87719 4.66285C9.87719 4.44663 9.87352 4.26451 9.87719 4.0824C9.88636 3.72853 10.0949 3.4983 10.3981 3.49952C10.7014 3.50073 10.9038 3.72609 10.9135 4.08484C10.9184 4.26147 10.9135 4.43871 10.9135 4.66224C11.1251 4.5459 11.3018 4.43932 11.4858 4.34978C11.764 4.21457 12.0501 4.28888 12.1914 4.52763C12.3393 4.77552 12.2654 5.06118 11.9982 5.2439C11.8979 5.31273 11.7885 5.36572 11.6839 5.42662C11.6167 5.46621 11.5512 5.50946 11.4516 5.5728Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                    <path
+                      d="M14.5592 5.56678C14.3495 5.44496 14.1845 5.35847 14.0279 5.25797C13.743 5.07525 13.6611 4.78472 13.8078 4.52709C13.9546 4.26945 14.2572 4.20793 14.5556 4.36446C14.72 4.45034 14.8778 4.54719 15.0881 4.669C15.0881 4.44791 15.0844 4.26701 15.0881 4.08673C15.0973 3.72555 15.2929 3.50202 15.5986 3.49714C15.9044 3.49227 16.1183 3.72798 16.1251 4.09891C16.1281 4.27371 16.1251 4.44913 16.1251 4.66413C16.3116 4.55876 16.4638 4.47044 16.6179 4.38578C16.9474 4.20793 17.2531 4.26884 17.4048 4.53622C17.5564 4.80361 17.4524 5.09353 17.1315 5.28721C16.9872 5.3737 16.8404 5.45775 16.6576 5.56495C16.8368 5.67154 16.9872 5.75924 17.1357 5.84939C17.4622 6.04794 17.5607 6.34822 17.3913 6.62352C17.2372 6.87385 16.9352 6.92379 16.6191 6.74533C16.4656 6.66067 16.3134 6.57296 16.1257 6.46638C16.1257 6.68991 16.13 6.87324 16.1257 7.05596C16.1159 7.40922 15.905 7.63823 15.6005 7.63397C15.296 7.62971 15.1022 7.41105 15.0906 7.06936C15.0838 6.88664 15.0906 6.70026 15.0906 6.46942C14.8967 6.57784 14.739 6.66798 14.5794 6.75508C14.2701 6.92379 13.957 6.86288 13.8115 6.60707C13.6574 6.33664 13.7448 6.0516 14.0457 5.86339C14.1997 5.76899 14.3618 5.68128 14.5592 5.56678Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1802_456">
+                      <rect
+                        width="25"
+                        height="10.3896"
+                        fill="white"
+                        transform="translate(0.5 0.370605)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
               <div class="listing-data">
                 <h4>Verification</h4>
                 <p>
@@ -187,7 +277,43 @@
               </div>
             </li>
             <li>
-              <img src="./images/svgs/Browse.svg" alt="browse" />
+              <div class="image-wrapper">
+                <svg
+                  width="24"
+                  height="23"
+                  viewBox="0 0 24 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1802_468)">
+                    <path
+                      d="M12.477 0.833984C12.9489 0.935052 13.433 0.996847 13.8899 1.14354C16.4726 1.97172 18.2153 4.50302 18.0287 7.14984C17.9707 7.97686 17.671 8.74844 17.3608 9.50846C16.4135 11.8295 15.1647 13.9941 13.8858 16.1437C13.7206 16.4221 13.5582 16.7033 13.3791 16.9736C12.7194 17.9698 11.252 17.986 10.6247 16.9707C9.14348 14.5734 7.72195 12.142 6.64768 9.5281C6.32128 8.73515 6.01344 7.93066 5.963 7.06379C5.80241 4.30089 7.83442 1.62 10.543 1.01071C10.8671 0.939672 11.1958 0.891737 11.5222 0.833984H12.477ZM12.0068 4.02945C11.5258 4.02796 11.0552 4.16872 10.6545 4.43389C10.2538 4.69906 9.94113 5.07671 9.75607 5.51903C9.571 5.96134 9.52187 6.44842 9.61488 6.91857C9.7079 7.38872 9.93888 7.8208 10.2786 8.16009C10.6183 8.49938 11.0514 8.73061 11.5231 8.82451C11.9948 8.9184 12.4839 8.87073 12.9284 8.68754C13.3729 8.50435 13.7528 8.19387 14.0201 7.79542C14.2873 7.39698 14.4298 6.92849 14.4296 6.44929C14.4298 5.80856 14.1748 5.19394 13.7206 4.74028C13.2663 4.28662 12.65 4.03098 12.0068 4.02945Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                    <path
+                      d="M0.890625 18.515C1.1289 17.4576 1.893 16.8546 2.7777 16.3608C2.85149 16.3181 2.93305 16.2904 3.01766 16.2794C3.10228 16.2683 3.18825 16.2741 3.2706 16.2964C3.35295 16.3187 3.43004 16.3571 3.49739 16.4093C3.56475 16.4615 3.62103 16.5265 3.66297 16.6005C3.83689 16.902 3.74123 17.2652 3.44208 17.4731C3.14294 17.6811 2.82118 17.8711 2.55218 18.1177C2.07099 18.5572 2.07562 18.9759 2.53594 19.4373C3.07916 19.9819 3.76964 20.2828 4.47577 20.545C5.87875 21.0648 7.33913 21.3351 8.82386 21.4991C10.412 21.6752 12.0121 21.7173 13.6073 21.625C15.7431 21.5037 17.8534 21.2271 19.8483 20.4122C20.3484 20.2067 20.8209 19.9399 21.2548 19.6181C21.9945 19.0683 21.9812 18.5306 21.2693 17.9525C21.0637 17.794 20.8484 17.6486 20.6246 17.517C20.2669 17.2953 20.1469 16.9216 20.3393 16.5965C20.5318 16.2713 20.9318 16.1714 21.2808 16.4018C21.6704 16.6588 22.071 16.9181 22.4009 17.2427C23.3616 18.1893 23.3401 19.4021 22.3853 20.3585C21.8507 20.8938 21.2014 21.2513 20.515 21.5476C19.1816 22.1251 17.774 22.4439 16.3408 22.6599C14.638 22.913 12.9159 23.0139 11.195 22.9614C9.06446 22.9036 6.95766 22.6651 4.90594 22.0599C4.06647 21.8121 3.25019 21.5043 2.5 21.0446C1.7243 20.5652 1.08716 19.975 0.890625 19.0336V18.515Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                    <path
+                      d="M8.94948 16.738C7.89956 16.9545 6.84616 17.0914 5.91393 17.7775C6.12902 17.9126 6.29425 18.038 6.47745 18.124C7.21314 18.4786 8.00507 18.6438 8.8057 18.7709C10.7311 19.0634 12.6876 19.091 14.6205 18.8529C15.5481 18.7431 16.4659 18.5785 17.3309 18.2101C17.5815 18.096 17.8185 17.9544 18.0376 17.7879C17.1616 17.0816 16.0995 16.9568 15.0525 16.7345C15.2733 16.3585 15.4815 15.9976 15.7006 15.6435C15.7232 15.6198 15.7511 15.6015 15.782 15.5903C15.8128 15.5791 15.8459 15.5752 15.8786 15.5789C16.7326 15.7417 17.5755 15.9456 18.3361 16.3839C18.5616 16.5127 18.7686 16.671 18.9518 16.8546C19.4939 17.4044 19.4846 18.1546 18.9426 18.7079C18.5002 19.1595 17.935 19.4009 17.3488 19.5938C16.1963 19.9762 15.0032 20.1494 13.7973 20.2372C12.3256 20.3527 10.8461 20.3256 9.37965 20.1563C8.179 20.012 6.98762 19.815 5.88958 19.2768C5.59185 19.1315 5.31815 18.9418 5.07794 18.7143C4.49472 18.1564 4.50805 17.3888 5.07794 16.8165C5.49188 16.403 6.01075 16.1616 6.55629 15.9872C7.05023 15.8295 7.55925 15.7186 8.06363 15.5829C8.20625 15.5442 8.28509 15.5881 8.35698 15.7175C8.54366 16.057 8.74309 16.3868 8.94948 16.738Z"
+                      fill="black"
+                      fill-opacity="0.84"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1802_468">
+                      <rect
+                        width="22.2222"
+                        height="22.1367"
+                        fill="white"
+                        transform="translate(0.890625 0.833984)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
               <div class="listing-data">
                 <h4>Browse Nearby Events</h4>
                 <p>
@@ -197,7 +323,21 @@
               </div>
             </li>
             <li>
-              <img src="./images/svgs/view.svg" alt="view" />
+              <div class="image-wrapper">
+                <svg
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.890625 7.20765V6.2563C0.904609 6.20825 0.915536 6.15936 0.923338 6.10994C1.04656 4.69882 1.63871 3.36895 2.60607 2.33083C4.88741 -0.165327 8.75736 -0.464912 11.4014 1.64647C11.608 1.8117 11.8032 1.98951 12.0121 2.1696L12.2755 1.92605C12.7228 1.50384 13.2356 1.15633 13.7941 0.89694C16.262 -0.215067 18.5944 0.0393508 20.7184 1.69736C22.1567 2.82137 22.9303 4.34902 23.0876 6.17226C23.2093 7.58042 22.8793 8.90396 22.3065 10.1772C21.5271 11.9107 20.3649 13.3789 19.0547 14.7339C16.9966 16.8653 14.6355 18.6216 12.1521 20.2253C12.0505 20.291 11.9771 20.3053 11.8651 20.2321C10.2243 19.1624 8.62306 18.0384 7.13144 16.7652C5.53939 15.4085 4.05924 13.9426 2.86319 12.2143C2.04421 11.0319 1.39682 9.76899 1.08461 8.35282C1.00139 7.97548 0.95433 7.58957 0.890625 7.20765Z"
+                    fill="black"
+                    fill-opacity="0.84"
+                  />
+                </svg>
+              </div>
               <div class="listing-data">
                 <h4>View Your Favourite Event</h4>
                 <p>
@@ -216,31 +356,41 @@
       </div>
     </main>
     <footer>
-      <div class="address">
-        <img src="./images/svgs/footerLogo.svg" alt="footer-logo" />
-        <p>
-          123 Market St. #22B <span>Charlottesville, California 44635</span>
-        </p>
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <div class="address-wrapper">
+            <div class="address">
+              <img src="./images/svgs/footerLogo.svg" alt="footer-logo" />
+              <p>
+                123 Market St. #22B
+                <span>Charlottesville, California 44635</span>
+              </p>
+            </div>
+            <ul class="contact">
+              <li><a href="">(434) 546-4356</a></li>
+              <li><a href="">contact@lift.agency</a></li>
+            </ul>
+          </div>
+          <div class="listing-wrapper">
+            <nav>
+              <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#work">How it Works</a></li>
+              </ul>
+              <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Instagram</a></li>
+              </ul>
+            </nav>
+            <span>© 2023 San Sebestian. All rights reserved.</span>
+          </div>
+        </div>
+        <p>© 2023 San Sebestian. All rights reserved.</p>
       </div>
-      <div class="listing-wrapper">
-        <nav>
-          <ul>
-            <li><a href="">(434) 546-4356</a></li>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#work">How it Works</a></li>
-          </ul>
-        </nav>
-        <ul>
-          <li><a href="">contact@lift.agency</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Linkedin</a></li>
-          <li><a href="">Instagram</a></li>
-        </ul>
-      </div>
-      <p>© 2023 San Sebestian. All rights reserved.</p>
     </footer>
   </body>
   <script>
