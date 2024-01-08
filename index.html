@@ -15,66 +15,70 @@
   </head>
   <body id="page-body">
     <header>
-      <nav>
-        <div class="top-nav">
-          <img src="./images/pngs//header-logo.png" alt="logo" />
-          <ul class="navigation-listing">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#work">How it Works</a></li>
-          </ul>
-          <button class="responsive-menu-button">
-            <img src="./images/svgs/hamburger.svg" alt="hamburger" />
-          </button>
-          <button class="login-button">Login</button>
-        </div>
-        <div class="side-bar">
-          <div class="header-wrapper">
-            <div class="header">
-              <img src="./images/pngs/sidebar-logo.png" alt="side-bar" />
-              <div class="cross-icon">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.9999 1.00006L1 17M0.999932 1L16.9999 16.9999"
-                    stroke="#1C274C"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <button>Login</button>
+      <div class="header-wrapper">
+        <nav>
+          <div class="top-nav">
+            <img src="./images/pngs//header-logo.png" alt="logo" />
+            <ul class="navigation-listing">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#work">How it Works</a></li>
+            </ul>
+            <button class="responsive-menu-button">
+              <img src="./images/svgs/hamburger.svg" alt="hamburger" />
+            </button>
+            <button class="login-button">Login</button>
           </div>
-          <ul>
-            <li class="side-bar-link"><a href="#home">Home</a></li>
-            <li class="side-bar-link"><a href="#about-us">About Us</a></li>
-            <li class="side-bar-link"><a href="#features">Features</a></li>
-            <li class="side-bar-link"><a href="#work">How it Works</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div class="side-bar">
+            <div class="header-wrapper">
+              <div class="header">
+                <img src="./images/pngs/sidebar-logo.png" alt="side-bar" />
+                <div class="cross-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.9999 1.00006L1 17M0.999932 1L16.9999 16.9999"
+                      stroke="#1C274C"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button>Login</button>
+            </div>
+            <ul>
+              <li class="side-bar-link"><a href="#home">Home</a></li>
+              <li class="side-bar-link"><a href="#about-us">About Us</a></li>
+              <li class="side-bar-link"><a href="#features">Features</a></li>
+              <li class="side-bar-link"><a href="#work">How it Works</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main">
-      <section class="service" id="home">
-        <div class="service-content">
-          <h2>Discover, Explore,& Attend <span>Nearby Events</span></h2>
-          <p>
-            Elevate your events effortlessly with our intuitive app. From
-            seamless planning to unforgettable moments, we've got every detail
-            covered. Experience the future of event management – simple,
-            seamless, and sensational.
-          </p>
-          <button>Explore</button>
-        </div>
-        <div class="service-image-wrapper">
-          <img src="./images/pngs/home.png" alt="home" />
+      <section class="service-wrapper">
+        <div class="service" id="home">
+          <div class="service-content">
+            <h2>Discover, Explore,& Attend <span>Nearby Events</span></h2>
+            <p>
+              Elevate your events effortlessly with our intuitive app. From
+              seamless planning to unforgettable moments, we've got every detail
+              covered. Experience the future of event management – simple,
+              seamless, and sensational.
+            </p>
+            <button>Explore</button>
+          </div>
+          <div class="service-image-wrapper">
+            <img src="./images/pngs/home.png" alt="home" />
+          </div>
         </div>
       </section>
       <section class="about-us" id="about-us">
@@ -117,53 +121,58 @@
           <img src="./images/pngs/about.png" alt="about-us" />
         </div>
       </section>
-      <section class="feature" id="features">
+      <section class="feature-wrapper">
         <div class="overlay"></div>
-        <div class="feature-content">
-          <h2>
-            <span>Unlocking Event Excitement:</span>
-            Our Key
-            <span>Features</span>
-          </h2>
+        <div class="feature" id="features">
+          <div class="feature-content">
+            <h2>
+              <span>Unlocking Event Excitement:</span>
+              Our Key
+              <span>Features</span>
+            </h2>
+          </div>
+          <ul class="event-listing">
+            <li>
+              <div class="event-listing-data">
+                <h3>Explore All Event</h3>
+                <p>
+                  Elevate your events effortlessly with our intuitive app. From
+                  seamless planning to unforgettable moments, we've got
+                </p>
+              </div>
+              <div class="event-listing-image">
+                <img
+                  src="./images/pngs/event-listing.png"
+                  alt="event-listing"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="event-listing-image">
+                <img src="./images/pngs/event-detail.png" alt="event-detail" />
+              </div>
+              <div class="event-listing-data">
+                <h3>Check Event Detail</h3>
+                <p>
+                  Elevate your events effortlessly with our intuitive app. From
+                  seamless planning to unforgettable moments, we've got
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="event-listing-data">
+                <h3>Near You Event</h3>
+                <p>
+                  Elevate your events effortlessly with our intuitive app. From
+                  seamless planning to unforgettable moments, we've got
+                </p>
+              </div>
+              <div class="event-listing-image">
+                <img src="./images/pngs/event-map.png" alt="event-map" />
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="event-listing">
-          <li>
-            <div class="event-listing-data">
-              <h3>Explore All Event</h3>
-              <p>
-                Elevate your events effortlessly with our intuitive app. From
-                seamless planning to unforgettable moments, we've got
-              </p>
-            </div>
-            <div class="event-listing-image">
-              <img src="./images/pngs/event-listing.png" alt="event-listing" />
-            </div>
-          </li>
-          <li>
-            <div class="event-listing-image">
-              <img src="./images/pngs/event-detail.png" alt="event-detail" />
-            </div>
-            <div class="event-listing-data">
-              <h3>Check Event Detail</h3>
-              <p>
-                Elevate your events effortlessly with our intuitive app. From
-                seamless planning to unforgettable moments, we've got
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="event-listing-data">
-              <h3>Near You Event</h3>
-              <p>
-                Elevate your events effortlessly with our intuitive app. From
-                seamless planning to unforgettable moments, we've got
-              </p>
-            </div>
-            <div class="event-listing-image">
-              <img src="./images/pngs/event-map.png" alt="event-map" />
-            </div>
-          </li>
-        </ul>
       </section>
       <section class="working-method-wrapper" id="work">
         <h2>How It Works:<span> A Step-by-Step Guide</span></h2>
@@ -347,38 +356,41 @@
       </div>
     </main>
     <footer>
-      <div class="footer-content">
-        <div class="address-wrapper">
-          <div class="address">
-            <img src="./images/svgs/footerLogo.svg" alt="footer-logo" />
-            <p>
-              123 Market St. #22B <span>Charlottesville, California 44635</span>
-            </p>
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <div class="address-wrapper">
+            <div class="address">
+              <img src="./images/svgs/footerLogo.svg" alt="footer-logo" />
+              <p>
+                123 Market St. #22B
+                <span>Charlottesville, California 44635</span>
+              </p>
+            </div>
+            <ul class="contact">
+              <li><a href="">(434) 546-4356</a></li>
+              <li><a href="">contact@lift.agency</a></li>
+            </ul>
           </div>
-          <ul class="contact">
-            <li><a href="">(434) 546-4356</a></li>
-            <li><a href="">contact@lift.agency</a></li>
-          </ul>
+          <div class="listing-wrapper">
+            <nav>
+              <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#work">How it Works</a></li>
+              </ul>
+              <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Instagram</a></li>
+              </ul>
+            </nav>
+            <span>© 2023 San Sebestian. All rights reserved.</span>
+          </div>
         </div>
-        <div class="listing-wrapper">
-          <nav>
-            <ul>
-              <li><a class="active" href="#home">Home</a></li>
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#work">How it Works</a></li>
-            </ul>
-            <ul>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Linkedin</a></li>
-              <li><a href="">Instagram</a></li>
-            </ul>
-          </nav>
-          <span>© 2023 San Sebestian. All rights reserved.</span>
-        </div>
+        <p>© 2023 San Sebestian. All rights reserved.</p>
       </div>
-      <p>© 2023 San Sebestian. All rights reserved.</p>
     </footer>
   </body>
   <script>
