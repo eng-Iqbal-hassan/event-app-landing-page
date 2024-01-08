@@ -24,8 +24,6 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 0.75rem 1.25rem;
-        // max-width: 26.875rem;
-        // margin: 0 auto;
         @media screen and (min-width: 37.5rem) {
           padding: 1.1875rem 1.875rem;
         }
@@ -217,7 +215,7 @@ header {
         @media screen and (min-width: 80rem) {
           @include text(1.125rem, 500, 1.875rem);
           letter-spacing: 5%;
-          margin: 26px 0;
+          margin: 1.625rem 0;
         }
       }
       button {
@@ -231,7 +229,7 @@ header {
         border-radius: 12px;
         border: none;
         outline: none;
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 37.5rem) {
           width: 8.0625rem;
           height: 2.25rem;
         }
@@ -320,7 +318,7 @@ header {
     gap: 1.25rem;
     margin-bottom: 2.0625rem;
     @media screen and (min-width: 37.5rem) {
-      padding: 16px 64px 16px 0;
+      padding: 1rem 4rem 1rem 0;
       gap: 1.5rem;
       margin-bottom: 0;
     }
@@ -521,7 +519,7 @@ header {
   background-color: $universalWhite;
   max-width: 90rem;
   margin: 0 auto;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 37.5rem) {
     padding: 0 1.875rem 4.375rem;
   }
   @media screen and (min-width: 80rem) {
@@ -582,7 +580,7 @@ header {
       gap: 2rem;
       @media screen and (min-width: 37.5rem) {
         grid-template-columns: repeat(2, 1fr);
-        gap: 45px 19px;
+        gap: 2.8125rem 1.1875rem;
       }
       @media screen and (min-width: 80rem) {
         grid-template-columns: 100%;
@@ -601,7 +599,7 @@ header {
           justify-content: center;
           align-items: center;
           flex: 0 0 3.125rem;
-          width: 50px;
+          width: 3.125rem;
           height: 3.125rem;
           border-radius: 50%;
           background-color: $bgTertiary;
