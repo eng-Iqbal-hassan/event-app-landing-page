@@ -54,6 +54,7 @@ h4 {
 
 body {
   font-family: "Inter" !important;
+  overflow-x: hidden;
 }
 
 .blur {
