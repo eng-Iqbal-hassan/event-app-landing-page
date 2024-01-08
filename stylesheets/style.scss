@@ -579,10 +579,9 @@ main {
         gap: 45px 19px;
       }
       @media screen and (min-width: 80rem) {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 100%;
         gap: 2.875rem;
+        width: min-content;
       }
       li {
         display: flex;
@@ -648,47 +647,148 @@ footer {
   background-color: $blackPrimary;
   // max-width: 26.875rem;
   // margin: 0 auto;
-  .address {
-    display: flex;
-    gap: 1.25rem;
-    margin-bottom: 2.5625rem;
-    img {
-      width: 4.3125rem;
-      height: 3.125rem;
-    }
-    p {
-      @include text(0.875rem, 400, 1.5rem);
-      color: $universalWhite;
-      max-width: 15.375rem;
-      span {
-        display: block;
-      }
-    }
+  @media screen and (min-width: 37.5rem) {
+    padding: 3.75rem 1.875rem 1rem;
   }
-  .listing-wrapper {
+  @media screen and (min-width: 80rem) {
+    padding: 6.25rem 11.4375rem;
+  }
+  .footer-content {
     display: flex;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-bottom: 2.5rem;
-    ul {
+    flex-direction: column;
+    @media screen and (min-width: 37.5rem) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .address-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      li {
-        list-style: none;
-        &:first-child {
-          margin-bottom: 1rem;
+      gap: 2.5625rem;
+      @media screen and (min-width: 37.5rem) {
+        flex-direction: row;
+        gap: 3.75rem;
+      }
+      @media screen and (min-width: 80rem) {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: flex-end;
+      }
+      .address {
+        display: flex;
+        gap: 1.25rem;
+        @media screen and (min-width: 80rem) {
+          gap: 3.75rem;
         }
-        a {
-          @include text(0.875rem, 400, 1.25rem);
+        img {
+          width: 4.3125rem;
+          height: 3.125rem;
+        }
+        p {
+          @include text(0.875rem, 400, 1.5rem);
           color: $universalWhite;
-          text-decoration: none;
+          max-width: 15.375rem;
+          span {
+            display: block;
+          }
+          @media screen and (min-width: 37.5rem) {
+            display: none;
+          }
+          @media screen and (min-width: 80rem) {
+            display: block;
+            @include text(1.5rem, 400, 2.25rem);
+            max-width: 19.1875rem;
+            text-align: left;
+          }
+        }
+      }
+      .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        width: 100%;
+        @media screen and (min-width: 37.5rem) {
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 1.625rem;
+        }
+        @media screen and (min-width: 80rem) {
+          max-width: 19.1875rem;
+          margin-bottom: 0;
+        }
+        li {
+          min-width: 9.875rem;
+          list-style: none;
+          @media screen and (min-width: 37.5rem) {
+            min-width: 9.0625rem;
+          }
+          @media screen and (min-width: 80rem) {
+            min-width: 19.1875rem;
+          }
+          a {
+            @include text(0.875rem, 400, 1.375rem);
+            color: $universalWhite;
+          }
+        }
+      }
+    }
+    .listing-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-bottom: 2.5rem;
+        @media screen and (min-width: 37.5rem) {
+          gap: 4.875rem;
+        }
+        @media screen and (min-width: 80rem) {
+          margin-bottom: 0;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          min-width: 9.875rem;
+          @media screen and (min-width: 37.5rem) {
+            min-width: auto;
+          }
+          @media screen and (min-width: 80rem) {
+            min-width: 8.9375rem;
+          }
+          li {
+            list-style: none;
+            a {
+              @include text(0.875rem, 400, 1.25rem);
+              color: rgb(255, 255, 255, 0.75);
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      span {
+        display: none;
+        @media screen and (min-width: 80rem) {
+          display: block;
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          color: #ffffffa6;
         }
       }
     }
   }
-  > p {
+  p {
     @include text(0.75rem, 400, 1.125rem);
     color: $universalWhite;
+    @media screen and (min-width: 37.5rem) {
+      @include text(0.625rem, 400, 1.25rem);
+      text-align: center;
+    }
+    @media screen and (min-width: 80rem) {
+      display: none;
+    }
   }
 }

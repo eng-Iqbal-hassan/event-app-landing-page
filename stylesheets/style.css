@@ -764,10 +764,10 @@ main {
 }
 @media screen and (min-width: 80rem) {
   .working-method-wrapper .working-method .working-method-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 100%;
     gap: 2.875rem;
+    width: -moz-min-content;
+    width: min-content;
   }
 }
 .working-method-wrapper .working-method .working-method-content li {
@@ -838,52 +838,197 @@ footer {
   padding: 2rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.8392156863);
 }
-footer .address {
+@media screen and (min-width: 37.5rem) {
+  footer {
+    padding: 3.75rem 1.875rem 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer {
+    padding: 6.25rem 11.4375rem;
+  }
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 37.5rem) {
+  footer .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+footer .footer-content .address-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5625rem;
+}
+@media screen and (min-width: 37.5rem) {
+  footer .footer-content .address-wrapper {
+    flex-direction: row;
+    gap: 3.75rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer .footer-content .address-wrapper {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: flex-end;
+  }
+}
+footer .footer-content .address-wrapper .address {
   display: flex;
   gap: 1.25rem;
-  margin-bottom: 2.5625rem;
 }
-footer .address img {
+@media screen and (min-width: 80rem) {
+  footer .footer-content .address-wrapper .address {
+    gap: 3.75rem;
+  }
+}
+footer .footer-content .address-wrapper .address img {
   width: 4.3125rem;
   height: 3.125rem;
 }
-footer .address p {
+footer .footer-content .address-wrapper .address p {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: #ffffff;
   max-width: 15.375rem;
 }
-footer .address p span {
+footer .footer-content .address-wrapper .address p span {
   display: block;
 }
-footer .listing-wrapper {
+@media screen and (min-width: 37.5rem) {
+  footer .footer-content .address-wrapper .address p {
+    display: none;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer .footer-content .address-wrapper .address p {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    max-width: 19.1875rem;
+    text-align: left;
+  }
+}
+footer .footer-content .address-wrapper .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 37.5rem) {
+  footer .footer-content .address-wrapper .contact {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.625rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer .footer-content .address-wrapper .contact {
+    max-width: 19.1875rem;
+    margin-bottom: 0;
+  }
+}
+footer .footer-content .address-wrapper .contact li {
+  min-width: 9.875rem;
+  list-style: none;
+}
+@media screen and (min-width: 37.5rem) {
+  footer .footer-content .address-wrapper .contact li {
+    min-width: 9.0625rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer .footer-content .address-wrapper .contact li {
+    min-width: 19.1875rem;
+  }
+}
+footer .footer-content .address-wrapper .contact li a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  color: #ffffff;
+}
+footer .footer-content .listing-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-content .listing-wrapper nav {
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
   margin-bottom: 2.5rem;
 }
-footer .listing-wrapper ul {
+@media screen and (min-width: 37.5rem) {
+  footer .footer-content .listing-wrapper nav {
+    gap: 4.875rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer .footer-content .listing-wrapper nav {
+    margin-bottom: 0;
+  }
+}
+footer .footer-content .listing-wrapper nav ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-width: 9.875rem;
 }
-footer .listing-wrapper ul li {
+@media screen and (min-width: 37.5rem) {
+  footer .footer-content .listing-wrapper nav ul {
+    min-width: auto;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer .footer-content .listing-wrapper nav ul {
+    min-width: 8.9375rem;
+  }
+}
+footer .footer-content .listing-wrapper nav ul li {
   list-style: none;
 }
-footer .listing-wrapper ul li:first-child {
-  margin-bottom: 1rem;
-}
-footer .listing-wrapper ul li a {
+footer .footer-content .listing-wrapper nav ul li a {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
 }
-footer > p {
+footer .footer-content .listing-wrapper span {
+  display: none;
+}
+@media screen and (min-width: 80rem) {
+  footer .footer-content .listing-wrapper span {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: rgba(255, 255, 255, 0.6509803922);
+  }
+}
+footer p {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.125rem;
   color: #ffffff;
+}
+@media screen and (min-width: 37.5rem) {
+  footer p {
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 80rem) {
+  footer p {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
