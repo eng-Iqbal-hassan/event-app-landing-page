@@ -349,7 +349,7 @@
           </ul>
         </div>
       </section>
-      <div class="scroll-button-wrapper">
+      <div class="scroll-button-wrapper" id="scrollUpButton">
         <a class="scroll-up-button" href="#page-body">
           <img src="./images/svgs/arrow-up.svg" alt="arrow-up" />
         </a>
@@ -434,5 +434,36 @@
         body.style.overflow = "scroll";
       });
     });
+    function handleScroll() {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      const scrollUpButton = document.getElementById("scrollUpButton");
+
+      // Adjust the threshold (100vh) based on when you want the button to appear
+      if (scrollY > 100) {
+        scrollUpButton.classList.add("visible");
+      } else {
+        scrollUpButton.classList.remove("visible");
+      }
+    }
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    // Add scroll event listener when the page loads
+    window.addEventListener("scroll", handleScroll);
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    // Add scroll event listener when the page loads
+    window.addEventListener("scroll", handleScroll);
   </script>
 </html>

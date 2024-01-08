@@ -632,6 +632,10 @@ header {
   }
 }
 .scroll-button-wrapper {
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
   .scroll-up-button {
     display: flex;
     justify-content: center;
@@ -644,8 +648,14 @@ header {
     position: fixed;
     bottom: 2.5rem;
     right: 1.25rem;
+    z-index: 100;
   }
 }
+.scroll-button-wrapper.visible {
+  display: block;
+  opacity: 1;
+}
+
 footer {
   background-color: $blackPrimary;
   .footer-wrapper {
