@@ -57,7 +57,7 @@ header {
               font-size: 0.875rem;
               font-weight: 500;
               line-height: 1.0588rem;
-              color: #fff;
+              color: $universalWhite;
               gap: 2rem;
               @media screen and (min-width: 80rem) {
                 font-size: 1.125rem;
@@ -782,7 +782,7 @@ footer {
             font-size: 0.75rem;
             font-weight: 400;
             line-height: 1.25rem;
-            color: #ffffffa6;
+            color: $whiteSecondary;
           }
         }
       }

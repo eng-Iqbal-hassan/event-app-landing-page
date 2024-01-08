@@ -117,7 +117,7 @@ header .header-wrapper nav .top-nav .navigation-listing li a {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.0588rem;
-  color: #fff;
+  color: #ffffff;
   gap: 2rem;
 }
 @media screen and (min-width: 80rem) {
