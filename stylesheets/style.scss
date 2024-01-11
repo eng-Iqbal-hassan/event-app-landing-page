@@ -354,6 +354,10 @@ header {
           font-weight: 700;
           line-height: 1.2rem;
           color: $blackPrimary;
+          display: block;
+          @media screen and (min-width: 37.5rem) {
+            display: inline;
+          }
           @media screen and (min-width: 80rem) {
             font-size: 1.125rem;
             line-height: 1.8rem;
