@@ -475,6 +475,12 @@ header .header-wrapper nav .side-bar ul li a {
   font-weight: 700;
   line-height: 1.2rem;
   color: rgba(0, 0, 0, 0.8392156863);
+  display: block;
+}
+@media screen and (min-width: 37.5rem) {
+  .about-us .about-us-content li p span {
+    display: inline;
+  }
 }
 @media screen and (min-width: 80rem) {
   .about-us .about-us-content li p span {
