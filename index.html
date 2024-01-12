@@ -20,10 +20,10 @@
           <div class="top-nav">
             <img src="./images/pngs//header-logo.png" alt="logo" />
             <ul class="navigation-listing">
-              <li><a href="#home">Inicio</a></li>
-              <li><a href="#about-us">Acerca de Nosotros</a></li>
-              <li><a href="#features">Características </a></li>
-              <li><a href="#work">Cómo Funciona</a></li>
+              <li class="home"><a href="#home">Inicio</a></li>
+              <li class="about"><a href="#about-us">Acerca de Nosotros</a></li>
+              <li class="feature"><a href="#features">Características </a></li>
+              <li class="work"><a href="#work">Cómo Funciona</a></li>
             </ul>
             <button class="responsive-menu-button">
               <img src="./images/svgs/hamburger.svg" alt="hamburger" />
@@ -68,7 +68,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="service-wrapper">
+      <section class="section service-wrapper">
         <div class="service" id="home">
           <div class="service-content">
             <h2>
@@ -90,7 +90,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us" id="about-us">
+      <section class="section about-us" id="about-us">
         <div class="about-us-heading">
           <h2>Acerca de Nosotros</h2>
           <p>
@@ -133,7 +133,7 @@
           <img src="./images/pngs/about.png" alt="about-us" />
         </div>
       </section>
-      <section class="feature-wrapper">
+      <section class="section feature-wrapper">
         <div class="overlay"></div>
         <div class="feature" id="features">
           <div class="feature-content">
@@ -189,7 +189,7 @@
           </ul>
         </div>
       </section>
-      <section class="working-method-wrapper" id="work">
+      <section class="section working-method-wrapper" id="work">
         <h2>Como trabaja: <span> Una Guía paso a paso</span></h2>
         <div class="working-method">
           <div class="image-wrapper">
@@ -418,7 +418,6 @@
     const crossIcon = document.querySelector(".cross-icon");
     const topNav = document.querySelector(".top-nav");
     var sidebarLinks = document.querySelectorAll(".side-bar-link");
-
     if (menuButton) {
       menuButton.addEventListener("click", () => {
         sideBar.classList.add("active");
@@ -455,32 +454,12 @@
       const scrollY = window.scrollY || document.documentElement.scrollTop;
       const scrollUpButton = document.getElementById("scrollUpButton");
 
-      // Adjust the threshold (100vh) based on when you want the button to appear
       if (scrollY > 100) {
         scrollUpButton.classList.add("visible");
       } else {
         scrollUpButton.classList.remove("visible");
       }
     }
-
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-
-    // Add scroll event listener when the page loads
-    window.addEventListener("scroll", handleScroll);
-
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-
-    // Add scroll event listener when the page loads
     window.addEventListener("scroll", handleScroll);
   </script>
 </html>

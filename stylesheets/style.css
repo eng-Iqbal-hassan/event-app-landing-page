@@ -52,6 +52,10 @@ h4 {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter" !important;
   overflow-x: hidden;
@@ -61,9 +65,6 @@ body {
   filter: blur(5px);
 }
 
-header {
-  background-color: #282828;
-}
 header .header-wrapper {
   position: relative;
   max-width: 90rem;
@@ -74,8 +75,14 @@ header .header-wrapper nav .top-nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1.25rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #282828;
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 48rem) {
   header .header-wrapper nav .top-nav {
     padding: 1.1875rem 1.875rem;
   }
@@ -89,7 +96,7 @@ header .header-wrapper nav .top-nav img {
   width: 2.875rem;
   height: 2.0625rem;
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 768px) {
   header .header-wrapper nav .top-nav img {
     width: 3.625rem;
     height: 2.625rem;
@@ -104,7 +111,7 @@ header .header-wrapper nav .top-nav img {
 header .header-wrapper nav .top-nav .navigation-listing {
   display: none;
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 48rem) {
   header .header-wrapper nav .top-nav .navigation-listing {
     display: flex;
     gap: 2rem;
@@ -137,7 +144,7 @@ header .header-wrapper nav .top-nav .responsive-menu-button {
   border-radius: 7px;
   padding: 0;
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 48rem) {
   header .header-wrapper nav .top-nav .responsive-menu-button {
     display: none;
   }
@@ -149,7 +156,7 @@ header .header-wrapper nav .top-nav .responsive-menu-button img {
 header .header-wrapper nav .top-nav .login-button {
   display: none;
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 48rem) {
   header .header-wrapper nav .top-nav .login-button {
     display: block;
     width: 8.0625rem;
@@ -181,7 +188,7 @@ header .header-wrapper nav .side-bar {
   max-width: 20.4375rem;
   height: 100vh;
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 48rem) {
   header .header-wrapper nav .side-bar {
     display: none;
   }
@@ -240,7 +247,7 @@ header .header-wrapper nav .side-bar ul li a {
   align-items: center;
   gap: 1.5rem;
   justify-content: center;
-  padding: 2.5rem 1.25rem 2rem;
+  padding: 97px 1.25rem 2rem;
   max-width: 90rem;
   margin: 0 auto;
 }
@@ -248,13 +255,13 @@ header .header-wrapper nav .side-bar ul li a {
   .service-wrapper .service {
     flex-direction: row;
     gap: 2rem;
-    padding: 2.125rem 1.875rem 2.625rem;
+    padding: 7.125rem 1.875rem 2.625rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .service-wrapper .service {
     gap: 1.5rem;
-    padding: 6.6875rem 8.4375rem 5.25rem;
+    padding: 13rem 8.4375rem 5.25rem;
   }
 }
 .service-wrapper .service .service-content {
@@ -852,7 +859,6 @@ header .header-wrapper nav .side-bar ul li a {
 
 .scroll-button-wrapper {
   cursor: pointer;
-  display: none;
   opacity: 0;
   transition: opacity 1s;
 }
