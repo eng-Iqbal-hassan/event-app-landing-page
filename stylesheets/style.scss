@@ -8,6 +8,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Inter" !important;
@@ -396,7 +397,7 @@ header {
     @media screen and (min-width: 80rem) {
       width: 34.4375rem;
       height: 26.625rem;
-      margin-top: 2.6875rem;
+      margin-top: 3.5rem;
     }
     img {
       width: 100%;
@@ -709,7 +710,7 @@ footer {
     padding: 2rem 1.25rem;
     max-width: 90rem;
     margin: 0 auto;
-    @media screen and (min-width: 37.5rem) {
+    @media screen and (min-width: 48rem) {
       padding: 3.75rem 1.875rem 1rem;
     }
     @media screen and (min-width: 80rem) {
@@ -718,7 +719,7 @@ footer {
     .footer-content {
       display: flex;
       flex-direction: column;
-      @media screen and (min-width: 37.5rem) {
+      @media screen and (min-width: 48rem) {
         flex-direction: row;
         justify-content: space-between;
       }
@@ -726,7 +727,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 2.5625rem;
-        @media screen and (min-width: 37.5rem) {
+        @media screen and (min-width: 48rem) {
           flex-direction: row;
           gap: 3.75rem;
         }
@@ -744,6 +745,10 @@ footer {
           img {
             width: 4.3125rem;
             height: 3.125rem;
+            @media screen and (min-width: 768px) {
+              width: 6rem;
+              height: 4.3125rem;
+            }
           }
           p {
             @include text(0.875rem, 400, 1.5rem);
@@ -752,7 +757,7 @@ footer {
             span {
               display: block;
             }
-            @media screen and (min-width: 37.5rem) {
+            @media screen and (min-width: 768px) {
               display: none;
             }
             @media screen and (min-width: 80rem) {
@@ -769,7 +774,7 @@ footer {
           align-items: center;
           margin-bottom: 2.5rem;
           width: 100%;
-          @media screen and (min-width: 37.5rem) {
+          @media screen and (min-width: 48rem) {
             justify-content: flex-start;
             flex-direction: column;
             gap: 1.625rem;
@@ -781,7 +786,7 @@ footer {
           li {
             min-width: 9.875rem;
             list-style: none;
-            @media screen and (min-width: 37.5rem) {
+            @media screen and (min-width: 48rem) {
               min-width: 9.0625rem;
             }
             @media screen and (min-width: 80rem) {
@@ -803,7 +808,7 @@ footer {
           justify-content: space-between;
           gap: 0.75rem;
           margin-bottom: 2.5rem;
-          @media screen and (min-width: 37.5rem) {
+          @media screen and (min-width: 48rem) {
             gap: 4.875rem;
           }
           @media screen and (min-width: 80rem) {
@@ -814,7 +819,7 @@ footer {
             flex-direction: column;
             gap: 1.5rem;
             min-width: 9.875rem;
-            @media screen and (min-width: 37.5rem) {
+            @media screen and (min-width: 48rem) {
               min-width: auto;
             }
             @media screen and (min-width: 80rem) {
@@ -845,7 +850,7 @@ footer {
     p {
       @include text(0.75rem, 400, 1.125rem);
       color: $universalWhite;
-      @media screen and (min-width: 37.5rem) {
+      @media screen and (min-width: 48rem) {
         @include text(0.625rem, 400, 1.25rem);
         text-align: center;
       }
