@@ -158,7 +158,9 @@ header .header-wrapper nav .top-nav .login-button {
 }
 @media screen and (min-width: 48rem) {
   header .header-wrapper nav .top-nav .login-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 8.0625rem;
     height: 2.25rem;
     font-size: 0.875rem;
@@ -197,6 +199,8 @@ header .header-wrapper nav .side-bar.active {
   left: 0 !important;
 }
 header .header-wrapper nav .side-bar .header-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem 1.5rem 1.875rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1803921569);
 }
@@ -213,7 +217,10 @@ header .header-wrapper nav .side-bar .header-wrapper .header .cross-icon {
   width: 1.125rem;
   height: 1.125rem;
 }
-header .header-wrapper nav .side-bar .header-wrapper button {
+header .header-wrapper nav .side-bar .header-wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 9.875rem;
   height: 2.25rem;
   background-color: #024e99;
@@ -316,7 +323,10 @@ header .header-wrapper nav .side-bar ul li a {
     letter-spacing: 5%;
   }
 }
-.service-wrapper .service .service-content button {
+.service-wrapper .service .service-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 11.25rem;
   height: 2.625rem;
   font-size: 0.875rem;
@@ -330,14 +340,14 @@ header .header-wrapper nav .side-bar ul li a {
   margin-top: 1.5rem;
 }
 @media screen and (min-width: 37.5rem) {
-  .service-wrapper .service .service-content button {
+  .service-wrapper .service .service-content a {
     margin-top: 1.25rem;
     width: 8.0625rem;
     height: 2.25rem;
   }
 }
 @media screen and (min-width: 80rem) {
-  .service-wrapper .service .service-content button {
+  .service-wrapper .service .service-content a {
     margin-top: 1.625rem;
     width: 12.75rem;
     height: 3.125rem;
@@ -826,6 +836,16 @@ header .header-wrapper nav .side-bar ul li a {
   height: 3.125rem;
   border-radius: 50%;
   background-color: #f5f5f5;
+}
+@media screen and (min-width: 80rem) {
+  .working-method-wrapper .working-method .working-method-content li .image-wrapper {
+    min-width: 4.5rem;
+    height: 4.5rem;
+  }
+  .working-method-wrapper .working-method .working-method-content li .image-wrapper svg {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 .working-method-wrapper .working-method .working-method-content li .listing-data h4 {
   color: rgba(0, 0, 0, 0.8392156863);

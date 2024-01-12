@@ -94,7 +94,9 @@ header {
         .login-button {
           display: none;
           @media screen and (min-width: 48rem) {
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 8.0625rem;
             height: 2.25rem;
             font-size: 0.875rem;
@@ -129,6 +131,8 @@ header {
           left: 0 !important;
         }
         .header-wrapper {
+          display: flex;
+          flex-direction: column;
           padding: 1.5rem 1.5rem 1.875rem;
           border-bottom: 1px solid $blackSecondary;
           .header {
@@ -144,7 +148,10 @@ header {
               height: 1.125rem;
             }
           }
-          button {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 9.875rem;
             height: 2.25rem;
             background-color: $colorPrimary;
@@ -231,7 +238,10 @@ header {
           // margin: 1.625rem 0;
         }
       }
-      button {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 11.25rem;
         height: 2.625rem;
         font-size: 0.875rem;
@@ -633,6 +643,14 @@ header {
           height: 3.125rem;
           border-radius: 50%;
           background-color: $bgTertiary;
+          @media screen and (min-width: 80rem) {
+            min-width: 4.5rem;
+            height: 4.5rem;
+            svg {
+              width: 2rem;
+              height: 2rem;
+            }
+          }
         }
         .listing-data {
           h4 {
